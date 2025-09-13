@@ -8,7 +8,8 @@ author_profile: true
 
 <!-- ===== 1. Projects & Papers ===== -->
 <h3 id="project">Projects & Papers</h3>
-{% for item in site.data.achievements | where: "category", "project" %}
+{% assign filtered_items = site.data.achievements | where: "category", "project" %}
+{% for item in filtered_items %}
 <div class="achieve-row">
 {% if item.logo %}
 <div class="achieve-logo">
