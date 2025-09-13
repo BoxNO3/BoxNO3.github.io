@@ -5,7 +5,7 @@
   #logo: proj-traffic.png
   desc: "Jiangsu Provincial Grand Prize, National Second Prize of the 15th Chinese Collegiate Computing Competition"
   authors: Suxiang Xiao, Chi Zhang, Lingxiang Zhang
-  advisors: Ye Tao, Jie Zhang
+  advisor: Ye Tao, Jie Zhang
 
 - category: project
   title: "Strategic Analysis of Virtual UP Character Design (Undergraduate Innovation Training Program Provincial-level Project)"
@@ -14,7 +14,7 @@
   desc: "Collected data of over 4,000 Bilibili virtual content creators and conducted multidimensional labeling of their appearances. Analyzed their character design strategies."
   outcome: "Complementary or Incompatible: Profit Analysis Based on the Virtual Up’s Avatar and Video Content"
   authors: Zhaoyuan Kang, Danyue Li, Suxiang Xiao, Ziyang Wu
-  advisors: Qianzhou Du
+  advisor: Qianzhou Du
   
 - category: project
   title: "The Impact of Danmaku and Comment Sentiment Similarity on Video Popularity: An Empirical Study Based on Bilibili Video Website"
@@ -26,21 +26,21 @@
 # ========== 奖项 ==========
 - category: prize
   title: "National Scholarship"
-  year: 2023-2024
+  year: 2023 - 2024
   #logo: prize-scholar.png
   #desc: "Top 0.2% undergraduate students in China."
 
 - category: prize
   title: Third-class People’s Scholarship of Nanjing University"
-  year: 2022-2023
+  year: 2022 - 2023
   
 - category: prize
   title: "Second-class People’s Scholarship of Nanjing University"
-  year: 2021-2022
+  year: 2021 - 2022
   
 - category: prize
   title: "Excellent Student of Nanjing University"
-  year: 2021-2022
+  year: 2021 - 2022
 
 # ========== 领导力 ==========
 #- category: leadership
