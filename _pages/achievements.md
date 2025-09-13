@@ -26,3 +26,13 @@ author_profile: true
 </div>
 </div>
 {% endfor %}
+
+<!-- ===== 2. Honors & Awards ===== -->
+<h3 id="prize">Honors & Awards</h3>
+<ul class="award-list">
+{% assign filtered_items = site.data.achievements | where: "category", "prize" %}
+{% for item in filtered_items %}
+    <li><strong>{{ item.title }}</strong>&nbsp;&nbsp;{{ item.year }}</li>
+  {% endfor %}
+</ul>
+、
