@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-{% for cat in "project,prize" %}
+{% for cat in "project" %}
   {% assign items = site.data.achievements | where: "category", cat %}
   {% if items.size > 0 %}
     <h3 id="{{ cat }}">{{ cat | replace: 'project', 'Projects & Papers' | replace: 'prize', 'Honors & Awards' }}</h3>
