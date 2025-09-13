@@ -6,12 +6,17 @@
 
 <div itemscope itemtype="http://schema.org/Person">
 
-  <div class="author__avatar">
-    {% if author.avatar contains "://" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" />
-    {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"  fetchpriority="high" />
-    {% endif %}
+  <div class="author__avatar avatar-swap">
+    {% assign avatar1 = 'profile1.png' %}
+    {% assign avatar2 = 'profile2.png' %}
+  
+    <!-- 底层图（默认显示） -->
+    <img src="{{ avatar1 | prepend: '/images/' | prepend: base_path }}"
+         class="avatar-base" alt="{{ author.name }}" fetchpriority="high">
+  
+    <!-- 悬停图 -->
+    <img src="{{ avatar2 | prepend: '/images/' | prepend: base_path }}"
+         class="avatar-hover" alt="{{ author.name }}">
   </div>
 
   <div class="author__content">
