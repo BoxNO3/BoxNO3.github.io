@@ -1,3 +1,4 @@
+#正规学历
 - degree: Ph.D. in Management Information System
   institution: The Hong Kong Polytechnic University
   period: 2025.9 – present
@@ -11,3 +12,16 @@
   institution: High School Affiliated To Nanjing Normal University
   period: 2018.9 - 2021.7
   logo: Nsfzlogo.jpg
+# ===== 交换经历 =====
+- type: exchange                 # 关键标记
+  degree: Exchange Experience
+  institution: University of British Columbia
+  period: 2023.7 – 2023.8
+  logo: UBClogo.png
+  description: Participated in Vancouver Summer Program at Sauder School of Business at the University of British Columbia.
+- type: exchange                 # 关键标记
+  degree: Exchange Experience
+  institution: Cornell University
+  period: 2024.7 – 2024.8
+  logo: Cornelllogo.png
+  description: Participated in CICER Summer Program atSC Johnson College of Business at Cornell University.
