@@ -23,7 +23,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           :"_pages/新箱证件照.jpg"
+  avatar           :"images/profile.png"
   name             : "Xiao Suxiang"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
