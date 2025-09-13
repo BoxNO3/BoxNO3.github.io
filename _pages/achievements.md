@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 {% include base_path %}
-{% for cat in "project,prize" %}
+{% for cat in "prize" %}
   {% assign items = site.data.achievements | where: "category", cat %}
 
   {% if items.size > 0 %}
