@@ -12,7 +12,7 @@ author_profile: true
   <div class="achieve-row">
     {% if item.logo %}
       <div class="achieve-logo">
-        <img src="{{ item.logo | prepend: '/images/achievements/' | relative_url }}" alt="{{ item.title }}">
+        <img src="{{ item.logo | prepend: '/images/' | relative_url }}" alt="{{ item.title }}">
       </div>
     {% endif %}
     <div class="achieve-text {% unless item.logo %}no-logo{% endunless %}">
