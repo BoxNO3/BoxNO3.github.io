@@ -9,7 +9,6 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "air" # Currently available options are "default", "air"
-# Site customization
 custom_css               : custom.css
 title                    : "Your Name / Site Title"
 title_separator          : "-"
