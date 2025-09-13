@@ -23,3 +23,22 @@
 }
 .institution{font-weight: bold;}
 .date{color: #666; font-size: 0.9em;}
+.edu-row{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.edu-logo{
+  flex: 0 0 80px;        /* logo 固定宽度 */
+  margin-right: 1.2rem;
+}
+.edu-logo img{
+  width: 100%;
+  height: auto;
+  border-radius: 4px;    /* 想要圆角可开 */
+}
+.edu-text{ flex: 1; }
+@media (max-width: 600px){
+  .edu-row{ flex-direction: column; align-items: flex-start; }
+  .edu-logo{ margin: 0 0 0.5rem 0; width: 60px; }
+}
