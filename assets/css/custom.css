@@ -56,7 +56,7 @@
 .achieve-row:last-child{ border-bottom: none; }   /* 最后一条去掉线 */
 
 .achieve-text h4{          /* title 最大 + 加粗 */
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 700;
   margin: 0 0 .5rem 0;
 }
