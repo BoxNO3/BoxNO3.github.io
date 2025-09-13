@@ -7,7 +7,8 @@ author_profile: true
 
 {% include base_path %}
 
-{% for cat in "project" %}
+{% comment %} 分段显示：Projects & Papers | Honors & Awards {% endcomment %}
+{% for cat in "project,prize" %}
   {% assign items = site.data.achievements | where: "category", cat %}
   {% if items.size > 0 %}
     <h3 id="{{ cat }}">{{ cat | replace: 'project', 'Projects & Papers' | replace: 'prize', 'Honors & Awards' }}</h3>
@@ -29,4 +30,3 @@ author_profile: true
     {% endfor %}
   {% endif %}
 {% endfor %}
-
