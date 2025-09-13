@@ -7,25 +7,6 @@ author_profile: true
 
 {% include base_path %}
 
-{% for cat in "project,prize" %}
-  {% assign items = site.data.achievements | where: "category", cat %}
-  {% if items.size > 0 %}
-    <h3 id="{{ cat }}">{{ cat | replace: 'project', 'Projects & Papers' | replace: 'prize', 'Honors & Awards' }}</h3>
-
-    {% for item in items %}
-    <div class="achieve-row">
-      <div class="achieve-logo">
-        <img src="{{ item.logo | prepend: '/images/achievements/' | relative_url }}" alt="{{ item.title }}">
-      </div>
-      <div class="achieve-text">
-        <h4>{{ item.title }}</h4>
-        <p class="year">{{ item.year }}</p>
-        {% if item.authors %}<p class="authors"><strong>Authors:</strong> {{ item.authors }}</p>{% endif %}
-        {% if item.advisor %}<p class="advisor"><strong>Advisor:</strong> {{ item.advisor }}</p>{% endif %}
-        <p class="desc">{{ item.desc | markdownify }}</p>
-        {% if item.outcome %}<p class="outcome"><strong>Outcome:</strong> {{ item.outcome | markdownify }}</p>{% endif %}
-      </div>
-    </div>
-    {% endfor %}
-  {% endif %}
+{% for item in site.data.achievements %}
+  <p>{{ item.title }}</p>
 {% endfor %}
