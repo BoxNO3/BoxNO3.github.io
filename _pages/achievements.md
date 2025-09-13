@@ -10,7 +10,7 @@ author_profile: true
 {% for cat in "project,prize" %}
   {% assign items = site.data.achievements | where: "category", cat %}
   {% if items.size > 0 %}
-    <h3 id="{{ cat }}">{{ cat | replace: 'project', 'Projects & Prizes' | replace: 'prize', 'Honors & Awards' | replace: 'leadership', 'Leadership' }}</h3>
+    <h3 id="{{ cat }}">{{ cat | replace: 'project', 'Projects & Papers' | replace: 'prize', 'Honors & Awards' }}</h3>
 
     {% for item in items %}
     <div class="achieve-row">
@@ -23,7 +23,7 @@ author_profile: true
         {% if item.authors %}<p class="authors"><strong>Authors:</strong> {{ item.authors }}</p>{% endif %}
         {% if item.advisor %}<p class="advisor"><strong>Advisor:</strong> {{ item.advisor }}</p>{% endif %}
         <p class="desc">{{ item.desc | markdownify }}</p>
-        <p class="outcome">{{ item.outcome | markdownify }}</p>
+        {% if item.outcome %}<p class="outcome"><strong>Outcome:</strong> {{ item.outcome | markdownify }}</p>{% endif %}
       </div>
     </div>
     {% endfor %}
