@@ -13,9 +13,11 @@ author_profile: true
   {% if edu.type == 'exchange' %}
     <h4 style="margin-top:2rem;">Exchange & Summer Schools</h4>
   {% endif %}
-  <div class="edu-row">
+
+  <!-- 下面这一行就是你要改的 -->
+  <div class="edu-row {% if edu.type == 'exchange' %}edu-exchange{% endif %}">
     <div class="edu-logo">
-      <img src="{{ edu.logo | prepend: '/images/' | relative_url }}" alt="{{ edu.institution }} logo">
+      <img src="{{ edu.logo | prepend: '/images/edu-logos/' | relative_url }}" alt="{{ edu.institution }} logo">
     </div>
     <div class="edu-text">
       <h3>{{ edu.degree }}</h3>
