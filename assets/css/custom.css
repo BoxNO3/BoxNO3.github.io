@@ -15,3 +15,11 @@
 .avatar-hover{ opacity:0; }
 .avatar-swap:hover .avatar-base{ opacity:0; }
 .avatar-swap:hover .avatar-hover{ opacity:1; }
+
+.education-item{
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #52adc8;
+  padding-left: 1rem;
+}
+.institution{font-weight: bold;}
+.date{color: #666; font-size: 0.9em;}
