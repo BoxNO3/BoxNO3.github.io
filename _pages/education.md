@@ -11,7 +11,7 @@ author_profile: true
 
 {% for edu in site.data.education %}
   {% if edu.type == 'exchange' %}
-    <h4 style="margin-top:2rem;">Exchange & Summer Schools</h4>
+  <h4 style="margin-top:2rem;">Exchange & Summer Schools</h4>
   {% endif %}
 
   <div class="edu-row {% if edu.type == 'exchange' %}edu-exchange{% endif %}">
