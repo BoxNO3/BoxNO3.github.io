@@ -27,7 +27,7 @@ author_profile: true
   </div>
 {% endfor %}
 
-<!-- 2. Honors & Awards（简洁列表） -->
+{% comment %} ===== 2. Honors & Awards ===== {% endcomment %}
 <h3 id="prize">Honors & Awards</h3>
 <ul class="award-list">
   {% for item in site.data.achievements | where: "category", "prize" %}
