@@ -4,10 +4,10 @@ title: "Achievements"
 permalink: /achievements/
 author_profile: true
 ---
-{{ site.data.achievements | inspect }}
+#{{ site.data.achievements | inspect }}
 {% include base_path %}
 
-{% for cat in "project,prize,leadership" %}
+{% for cat in "project,prize" %}
   {% assign items = site.data.achievements | where: "category", cat %}
   {% if items.size > 0 %}
     <h3 id="{{ cat }}">{{ cat | replace: 'project', 'Projects & Prizes' | replace: 'prize', 'Honors & Awards' | replace: 'leadership', 'Leadership' }}</h3>
