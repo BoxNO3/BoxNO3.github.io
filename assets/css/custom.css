@@ -45,28 +45,47 @@
 }
 .edu-exchange{ margin-left: 1rem; border-left: 3px solid #ffd700; padding-left: 1rem; }
 
+/* ---- 单条 Project 卡片 ---- */
 .achieve-row{
   display: flex;
-  align-items: center;
-  margin-bottom: 1.8rem;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e5e5e5;   /* 分割线 */
 }
-.achieve-logo{
-  flex: 0 0 55px;
-  margin-right: 1rem;
+.achieve-row:last-child{ border-bottom: none; }   /* 最后一条去掉线 */
+
+.achieve-text h4{          /* title 最大 + 加粗 */
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 .5rem 0;
 }
-.achieve-logo img{
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
+
+.achieve-text .authors,
+.achieve-text .advisor{    /* author & advisor 同尺寸 */
+  font-size: 1rem;
+  margin: .3rem 0;
+  color: #444;
 }
-.achieve-text{ flex: 1; }
-.year{ color: #666; font-size: 0.9em; margin: 0; }
-.authors, .advisor{
-  font-size: 0.9em;
+
+.achieve-text .desc,
+.achieve-text .outcome{    /* description 小字 */
+  font-size: .9rem;
+  line-height: 1.6;
+  margin: .6rem 0 0 0;
   color: #555;
-  margin: 0.2rem 0;
 }
+
+.achieve-text .year{       /* 年份保持原样 */
+  font-size: .9rem;
+  color: #777;
+  margin: .2rem 0;
+}
+
+/* 无 logo 时文字占满 */
+.achieve-text.no-logo{ flex: 1 1 100%; }
+
 @media (max-width: 600px){
-  .achieve-row{ flex-direction: column; align-items: flex-start; }
-  .achieve-logo{ margin: 0 0 0.5rem 0; width: 45px; }
+  .achieve-row{ flex-direction: column; }
+  .achieve-logo{ margin: 0 0 1rem 0; width: 60px; }
 }
