@@ -4,10 +4,9 @@ title: "Achievements"
 permalink: /achievements/
 author_profile: true
 ---
-
 {% include base_path %}
 
-<!-- 1. Projects & Papers（卡片式） -->
+<!-- ===== 1. Projects & Papers ===== -->
 <h3 id="project">Projects & Papers</h3>
 {% for item in site.data.achievements | where: "category", "project" %}
   <div class="achieve-row">
@@ -26,11 +25,3 @@ author_profile: true
     </div>
   </div>
 {% endfor %}
-
-{% comment %} ===== 2. Honors & Awards ===== {% endcomment %}
-<h3 id="prize">Honors & Awards</h3>
-<ul class="award-list">
-  {% for item in site.data.achievements | where: "category", "prize" %}
-    <li><strong>{{ item.title }}</strong>&nbsp;&nbsp;{{ item.year }}</li>
-  {% endfor %}
-</ul>
