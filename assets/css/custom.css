@@ -44,3 +44,29 @@
   .edu-logo{ margin: 0 0 0.5rem 0; width: 60px; }
 }
 .edu-exchange{ margin-left: 1rem; border-left: 3px solid #ffd700; padding-left: 1rem; }
+
+.achieve-row{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+.achieve-logo{
+  flex: 0 0 55px;
+  margin-right: 1rem;
+}
+.achieve-logo img{
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.achieve-text{ flex: 1; }
+.year{ color: #666; font-size: 0.9em; margin: 0; }
+.authors, .advisor{
+  font-size: 0.9em;
+  color: #555;
+  margin: 0.2rem 0;
+}
+@media (max-width: 600px){
+  .achieve-row{ flex-direction: column; align-items: flex-start; }
+  .achieve-logo{ margin: 0 0 0.5rem 0; width: 45px; }
+}
