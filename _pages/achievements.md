@@ -5,7 +5,7 @@ permalink: /achievements/
 author_profile: true
 ---
 {% include base_path %}
-{{ site.data.achievements | map: "category" | uniq | inspect }}
+
 <!-- ===== 1. Projects & Papers ===== -->
 <h3 id="project">Projects & Papers</h3>
 {% for item in site.data.achievements | where: "category", "project" %}
