@@ -91,9 +91,9 @@
 }
 #project,               /* Projects & Papers */
 #prize {                /* Honors & Awards  */
-  font-size: 1.6rem;      /* 想再大就改 2.2rem、2.5rem... */
+  font-size: 1.4rem;      /* 想再大就改 2.2rem、2.5rem... */
   font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1.2rem;
-  color: #333;          /* 想换颜色这里调 */
+  color: #003366;          /* 想换颜色这里调 */
 }
