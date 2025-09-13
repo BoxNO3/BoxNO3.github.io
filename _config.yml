@@ -27,11 +27,11 @@ author:
   avatar           : "profile.png"
   name             : "Xiao Suxiang"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Sidebar skill icon still gray—gonna put my next point in it after I level up."
   location         : "Hong Kong"
-  employer         : "The Hong Kong Polytechnic University"
+  employer         : "Hong Kong Polytechnic University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "suxiang.xiao@connect.polyu.hk" 
 
   # Academic websites
   academia         : # URL
