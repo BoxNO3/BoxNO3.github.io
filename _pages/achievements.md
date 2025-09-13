@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-{% for cat in "project,prize" %}
+{% for cat in site.data.achievements | map: 'category' | uniq %}
 {% for item in site.data.achievements %}
   <p>{{ item.title }}</p>
 {% endfor %}
