@@ -4,7 +4,7 @@ title: "Achievements"
 permalink: /achievements/
 author_profile: true
 ---
-
+{{ site.data.achievements | inspect }}
 {% include base_path %}
 
 {% for cat in "project,prize,leadership" %}
