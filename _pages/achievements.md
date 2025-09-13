@@ -30,10 +30,10 @@ author_profile: true
         </div>
       {% endfor %}
     {% else %}{% comment %} ====== prize 简洁列表 ====== {% endcomment %}
-      <h3 id="prize">Honors & Awards</h3>
-      <ul class="award-list">
+    <h3 id="prize">Honors & Awards</h3>
+    <ul class="award-list">
         {% for item in items %}
-          <li><strong>{{ item.title }}</strong>&nbsp;&nbsp;{{ item.year }}</li>
+        <li><strong>{{ item.title }}</strong>&nbsp;&nbsp;{{ item.year }}</li>
         {% endfor %}
       </ul>
     {% endif %}
