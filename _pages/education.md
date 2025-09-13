@@ -10,15 +10,18 @@ author_profile: true
 ## Education Experience
 
 {% for edu in site.data.education %}
-<div class="edu-row">
-  <div class="edu-logo">
-    <img src="{{ edu.logo | prepend: '/images/' | relative_url }}" alt="{{ edu.institution }} logo">
+  {% if edu.type == 'exchange' %}
+    <h4 style="margin-top:2rem;">Exchange & Summer Schools</h4>
+  {% endif %}
+  <div class="edu-row">
+    <div class="edu-logo">
+      <img src="{{ edu.logo | prepend: '/images/' | relative_url }}" alt="{{ edu.institution }} logo">
+    </div>
+    <div class="edu-text">
+      <h3>{{ edu.degree }}</h3>
+      <p class="institution">{{ edu.institution }}</p>
+      <p class="date">{{ edu.period }}</p>
+      {% if edu.description %}<p class="description">{{ edu.description }}</p>{% endif %}
+    </div>
   </div>
-  <div class="edu-text">
-    <h3>{{ edu.degree }}</h3>
-    <p class="institution">{{ edu.institution }}</p>
-    <p class="date">{{ edu.period }}</p>
-    {% if edu.description %}<p class="description">{{ edu.description }}</p>{% endif %}
-  </div>
-</div>
 {% endfor %}
