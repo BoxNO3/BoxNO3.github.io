@@ -89,3 +89,11 @@
   .achieve-row{ flex-direction: column; }
   .achieve-logo{ margin: 0 0 1rem 0; width: 60px; }
 }
+#project,               /* Projects & Papers */
+#prize {                /* Honors & Awards  */
+  font-size: 1.6rem;      /* 想再大就改 2.2rem、2.5rem... */
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+  color: #333;          /* 想换颜色这里调 */
+}
