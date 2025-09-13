@@ -4,11 +4,10 @@ title: "Achievements"
 permalink: /achievements/
 author_profile: true
 ---
-
 {% include base_path %}
-{% for cat in "project,prize" %}
-{% assign items = site.data.achievements | where: "category", cat %}
 
+{% for cat in site.data.achievements | map: 'category' | uniq %}
+{% assign items = site.data.achievements | where: "category", cat %}
 {% if items.size > 0 %}
 {% if cat == "project" %}
 <h3 id="project">Projects & Papers</h3>
@@ -29,7 +28,7 @@ author_profile: true
 </div>
 </div>
 {% endfor %}
-{% else %}{% comment %} ====== prize 简洁列表 ====== {% endcomment %}
+{% elsif cat == "prize" %}
 <h3 id="prize">Honors & Awards</h3>
 <ul class="award-list">
 {% for item in items %}
