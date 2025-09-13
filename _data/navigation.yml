@@ -10,7 +10,7 @@
 main:
   - title: "Education"
     url: /education/
-  - title: "Portfolio"
+  - title: "Achievements"
     url: /achievements/
   #- title: "Publications"
   #  url: /publications/
