@@ -12,7 +12,7 @@ author_profile: true
 {% for edu in site.data.education %}
 <div class="edu-row">
   <div class="edu-logo">
-    <img src="{{ edu.logo | prepend: '/images/edu-logos/' | relative_url }}" alt="{{ edu.institution }} logo">
+    <img src="{{ edu.logo | prepend: '/images/' | relative_url }}" alt="{{ edu.institution }} logo">
   </div>
   <div class="edu-text">
     <h3>{{ edu.degree }}</h3>
